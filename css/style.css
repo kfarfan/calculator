@@ -19,11 +19,11 @@
 .container {
     height: 680px;
     width: 600px;
+    border-radius: 5%;
     background: var(--main-color);
     margin: 0 auto;
-    border-radius: 5%;
-    border-right: 2px solid #FFFFFF;
-    border-bottom: 2px solid #FFFFFF;
+    border-right: 5px solid #FFFFFF;
+    border-bottom: 5px solid #FFFFFF;
     font-family: 'Space Mono', monospace;
 }
 
@@ -33,6 +33,7 @@
     background: var(--main-color);
     margin: 0 auto;
     margin-top: 10px;
+    border-radius: 5%;
 }
 .inner__result {
     margin-top: 20px;
@@ -54,7 +55,7 @@
     width: 600px;
     display: flex;
     flex-wrap: wrap;
-    border-radius: 10%;
+    border-radius: 5%;
 }
 
 .calc__numbers {
@@ -64,6 +65,7 @@
     background: var(--main-button);
     border-radius: 10px;
     color: black;
+    border-radius: 40%;
     font-size: 55px;
     text-align: center;
     margin-left: 30px;
