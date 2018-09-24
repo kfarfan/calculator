@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+ :root {
+     --main-color: #9BF5B4;
+     --main-button: #FF9C5F;
+     --operations: #FF8CC9;
+     --result: #FFFFFF;
+ }
+
+ body {
+     background: #333;
+     margin-top: 25px;
+ }
+
+.container {
+    height: 680px;
+    width: 600px;
+    background: var(--main-color);
+    margin: 0 auto;
+    border-radius: 5%;
+    border-right: 2px solid #FFFFFF;
+    border-bottom: 2px solid #FFFFFF;
+    font-family: 'Space Mono', monospace;
+}
+
+.result {
+    width: 500px;
+    height: 50px;
+    background: var(--main-color);
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.inner__result {
+    margin-top: 20px;
+    height: 50px;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    border: 2px solid var(--operations);
+    background: var(--result);
+    font-size: 30px;
+    color: #333;
+    -moz-text-blink: 1s all ease;
+}
+
+.calculator {
+    align-content: center;
+    background: var(--main-color);
+    height: 680px;
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10%;
+}
+
+.calc__numbers {
+    width: 150px;
+    margin: 1rem;
+    height: 75px;
+    background: var(--main-button);
+    border-radius: 10px;
+    color: black;
+    font-size: 55px;
+    text-align: center;
+    margin-left: 30px;
+    transition: border-color 1.2s ease, color 1.2s ease;
+    border: 2px solid #333;
+    
+}
+.calc__numbers:hover {
+    color: peachpuff;
+    border: 2px solid var(--main-color);
+    cursor: pointer;
+    transition: .70s ease-in-out;
+    transition: .90 ease-out;
+    
+}
+
+.add {
+    background:var(--operations);
+}
+
+.subtract {
+    background:var(--operations);
+}
+
+.multiply {
+    background: var(--operations);
+}
+
+.divide {
+    background: var(--operations);
+}
+
+.equals {
+    background:var(--operations);
+    width: 150px;
+    margin: 1rem;
+    height: 70px;
+    border-radius: 10px;
+    border: 2px solid #333;
+    color: black;
+    font-size: 60px;
+    text-align: center;
+    margin-left: 30px;
+    transition: border-color 1.2s ease, color 1.2s ease;
+}
+
+.equals:hover {
+    color: peachpuff;
+    border: 2px solid var(--main-color);
+    cursor: pointer;
+    transition: .70s ease-in-out;
+    transition: .90 ease-out;
+
+    
+}
+
+.clear {
+    width: 600px;
+    margin: 1rem;
+    height: 70px;
+    background: var(--operations);
+    border-radius: 10px;
+    border: 2px solid #333;
+    color: black;
+    font-size: 50px;
+    text-align: center;
+    margin-left: 30px;
+    transition: border-color 1.2s ease, color 1.2s ease;
+}
+
+.clear:hover {
+    color: peachpuff;
+    border: 2px solid var(--main-color);
+    cursor: pointer;
+    transition: .70s ease-in-out;
+    transition: .90 ease-out;
+}
