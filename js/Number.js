@@ -3,7 +3,7 @@ export class Number {
         this.number = number;
         this.group = [];
         this.text = '';
-        this.returned = 0;
+        this.returned = undefined;
     }
     add (number) {
         this.group.push(number);
@@ -15,8 +15,7 @@ export class Number {
         this.text = this.group.join('');
     }
     cleared () {
-        this.number;
-        this.group = [];
+        this.group = [this.returned+''];
         this.text = '';
     }
     calculated () {

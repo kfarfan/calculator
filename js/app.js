@@ -13,8 +13,8 @@ document.addEventListener('click', function (e) {
     }   
         else if (e.target.className.includes('equals')) {    
             inputs.calculated();
-            audio.play();
-            console.log(inputs);
+            inputs.cleared()
+            audio.play();;
              if(inputs.returned == undefined) {
                  inner__result.innerHTML = 'ERROR';
              } else {
@@ -26,7 +26,6 @@ document.addEventListener('click', function (e) {
             inputs.add(selected);
             inputs.toString();
             inner__result.innerHTML = inputs.text;
-            console.log(inputs);
             
             
     }
